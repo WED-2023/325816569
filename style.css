@@ -1,7 +1,108 @@
-#menu
-{
-	position: fixed;
-	width: 100%;
-	height: 35px;
-	background: white;
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 60px; /* Adjust this value to match your menu height */
+}
+#menu {
+    position: fixed;
+    width: 100%;
+    height: 50px;
+    background: linear-gradient(90deg, #007acc, #4facfe);
+    z-index: 10;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    padding: 0 20px;
+    transition: background-color 0.3s;
+}
+
+#menu ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 25px;
+}
+
+#menu ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1em;
+    padding: 5px 10px;
+    border-radius: 8px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#menu ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #ffdd57;
+}
+
+.photo-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 70px;
+    padding: 20px;
+    align-items: center;
+    background-color: #eef3f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 0;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+figure:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.photo {
+    max-width: 250px;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s;
+}
+
+figcaption {
+    margin-top: 8px;
+    font-size: 0.95em;
+    color: #444;
+}
+#emoji-keyboard {
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    background-color: #f4f4f4;
+    cursor: pointer;
+    user-select: none;
+    max-width: 400px;
+    margin-bottom: 10px;
+}
+
+#emoji-keyboard span {
+    font-size: 1.5em;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+#emoji-keyboard span:hover {
+    transform: scale(1.2);
 }

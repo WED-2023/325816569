@@ -1,193 +1,152 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link rel="stylesheet" type="text/css" href="style.css" />
+    <title>Personal Website</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body { font-family: Arial, sans-serif; background-color: #f4f4f9; margin: 0; padding: 0; }
+        #menu { background-color: #00bfff; color: white; padding: 10px; display: flex; justify-content: center; position: fixed; width: 100%; top: 0; z-index: 10; }
+        #menu ul { list-style: none; margin: 0; padding: 0; display: flex; gap: 20px; }
+        #menu ul li { display: inline; }
+        #menu ul li a { color: white; text-decoration: none; font-weight: bold; }
+        #menu ul li a:hover { text-decoration: underline; }
+        section { margin-top: 100px; padding: 20px; background-color: white; margin-bottom: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); max-width: 800px; margin-left: auto; margin-right: auto; }
+        h2 { color: #00bfff; border-bottom: 2px solid #00bfff; padding-bottom: 10px; margin-bottom: 20px; }
+        form { display: flex; flex-direction: column; gap: 10px; max-width: 400px; margin-top: 10px; }
+        input, textarea, select, button { padding: 10px; border: 1px solid #ccc; border-radius: 5px; }
+        button { background-color: #00bfff; color: white; border: none; cursor: pointer; }
+        button:hover { background-color: #007acc; }
+    </style>
 </head>
 <body>
-<div id="menu">
-<li><a href="#about">About Me</a></li>
-<li><a href="#photos">My Photos</a></li>
-<li><a href="#playlist">My Playlist</a></li>
-<li><a href="#like">Like</a></li>
-<li><a href="#qrcoder">QR code</a></li>
-<li><a href="#spa">Q&A</a></li>
-<li><a href="#contact">Contact Me</a></li>
-</div>
-		  
-<section id="about" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-about me
-<br/>
-<br/>
-<br/>
-</section>
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/he_IL/sdk.js#xfbml=1&version=v22.0"></script>
+    <div id="menu">
+        <ul>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#photos">My Photos</a></li>
+            <li><a href="#playlist">My Playlist</a></li>
+            <li><a href="#like">Like</a></li>
+            <li><a href="#qrcode">QR Code</a></li>
+            <li><a href="#qa">Q&A</a></li>
+            <li><a href="#contact">Contact Me</a></li>
+        </ul>
+    </div>
 
-<section id="photos" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-my photos
-<br/>
-<br/>
-<br/>
-</section>
+    <section id="about">
+        <h2>About Shimi</h2>
+        <p>
+            Shimi has been through a lot in life. He was married twice — his first wife sadly passed away in an accident. Despite the hardships, Shimi found love again and remarried.
+        </p>
+        <p>
+            He is a big fan of Real Madrid and loves going to their games whenever he can. Watching his favorite team play is one of his greatest joys.
+        </p>
+        <p>
+            Shimi is also known for his creativity — he likes making things up and adding a touch of imagination to his everyday life. It's part of his charm and what makes him so unique.
+        </p>
+        <p>
+            Throughout his life, Shimi has been inspired by people who are resilient and never give up. Their strength has motivated him to keep moving forward, no matter what.
+        </p>
+    </section>
+    
+    <section id="photos">
+        <h2>My Photos</h2>
+        <h3>Here are some photos from my life:</h3>
+        
+        <div class="photo-gallery">
+            <figure>
+                <img src="oldManGang.jpg" alt="Photo 1" class="photo">
+                <figcaption>Shimi having fun with his friends during Purim, all dressed up in creative costumes!</figcaption>
+            </figure>
+    
+            <figure>
+                <img src="MyFirstWife.jpg" alt="Photo 2" class="photo">
+                <figcaption>A cherished memory with Shimi's first wife, a moment that holds a lot of emotions.</figcaption>
+            </figure>
+    
+            <figure>
+                <img src="MySecondWife.jpg" alt="Photo 3" class="photo">
+                <figcaption>Shimi's wedding day with his second wife — a day of new beginnings and happiness.</figcaption>
+            </figure>
+        </div>
+    </section>
 
-<section id="playlist" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-my playlist
-<br/>
-<br/>
-<br/>
-</section>
+<section id="playlist">
+  <h2>My Playlist</h2>
+  <h3>This is the best song ever!!</h3>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/dDKHKyTuhoQ?si=OLCv8brK00LwtOq1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </section>
 
-<section id="like" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-give me a like
-<br/>
-<br/>
-<br/>
-</section>
-
-<section id="qrcoder" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-scan my code
-<br/>
-<br/>
-<br/>
-</section>
-
-<section id="spa" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-ans
-<br/>
-<br/>
-<br/>
-</section>
-
-<section id="contact" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-contact me
-<br/>
-<br/>
-<br/>
-</section>
-
-
-<script type="text/javascript">
-$(function(){
-  $("#nav a").click(function(e){
-    e.preventDefault();
-    $('html,body').scrollTo(this.hash,this.hash); 
-  });
-});
-</script>
-<script type="text/javascript">
- $(document).scroll(function() {
-    $('#menu').toggle($(this).scrollTop()>1000)
- });​
- </script>
+    <section id="like">
+        <h2>Like</h2>
+        <div class="fb-like" data-href="https://www.gool.co.il/" data-width="" data-layout="" data-action="" data-size="" data-share="false"></div>
+            </section>
+    <section id="qrcode">
+        <h2>QR Code</h2>
+        <img src="frame.png" alt="QR Code" style="max-width: 200px; margin-top: 10px;" />
+            </section>
+    <section id="qa">
+        <h2>Q&A</h2>
+    
+        <div>
+            <h3 onclick="toggleAnswer('answer1')" style="cursor: pointer; color: #007acc;">1. What are the main differences between Web1, Web2, and Web3? (Click to Show)</h3>
+            <div id="answer1" style="display: none;">
+                <ul>
+                    <li><strong>Web1:</strong> Static websites with limited interaction. Users can only read information. No user-generated content.</li>
+                    <li><strong>Web2:</strong> Dynamic and interactive websites. Users can create content (like social media). Focuses on user participation.</li>
+                    <li><strong>Web3:</strong> Decentralized internet with blockchain technology. Users have control over their data. Smart contracts enable secure transactions.</li>
+                </ul>
+            </div>
+        </div>
+    
+        <div>
+            <h3 onclick="toggleAnswer('answer2')" style="cursor: pointer; color: #007acc;">2. Example of a Use Case (Click to Show)</h3>
+            <div id="answer2" style="display: none;">
+                <p>Search Query: "I wish there were drugs"</p>
+                <ul>
+                    <li><strong>Web1:</strong> You find a static website with basic information about drugs. No interaction or user feedback.</li>
+                    <li><strong>Web2:</strong> You find forums, blogs, or social media posts where users discuss and share information about drugs.</li>
+                    <li><strong>Web3:</strong> You find decentralized platforms with verified, trustworthy information. You may even interact with AI-driven smart contracts for secure medical consultations.</li>
+                </ul>
+            </div>
+        </div>
+    
+        <script>
+            function toggleAnswer(id) {
+                const answer = document.getElementById(id);
+                answer.style.display = answer.style.display === "none" ? "block" : "none";
+            }
+        </script>
+    </section>
+    
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <form>
+          <label for="email">Your Email:</label>
+          <input type="email" id="email" name="email" required>
+  
+          <label for="message">Your Message:</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+  
+          <div id="emoji-keyboard">
+              <span>😀</span> <span>😘</span> <span>🥵</span> <span>😉</span> <span>😎</span>
+              <span>👨‍🦼</span> <span>👩🏼‍🦳</span> <span>🤩</span> <span>😂</span> <span>🥰</span>
+              <span>🤔</span> <span>😢</span> <span>🤯</span> <span>😡</span>
+          </div>
+  
+          <button type="submit">Send</button>
+      </form>
+  </section>
+  
+  <script>
+      const emojiKeyboard = document.getElementById('emoji-keyboard');
+      const messageBox = document.getElementById('message');
+  
+      emojiKeyboard.addEventListener('click', (event) => {
+          if (event.target.tagName === 'SPAN') {
+              messageBox.value += event.target.textContent;
+          }
+      });
+  </script>
 </body>
 </html>
